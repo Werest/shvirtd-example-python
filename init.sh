@@ -8,8 +8,8 @@ TAG="latest"
 FULL_IMAGE="cr.yandex/${REGISTRY_ID}/${IMAGE_NAME}:${TAG}"
 
 # Удаляем старый каталог и клонируем заново
-sudo rm -rf $DIR/shvirtd-example-python
-git clone $REPO $DIR/shvirtd-example-python
+# sudo rm -rf $DIR/shvirtd-example-python
+# git clone $REPO $DIR/shvirtd-example-python
 cd $DIR/shvirtd-example-python
 
 # Собираем Docker образ
