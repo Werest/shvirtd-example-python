@@ -33,5 +33,8 @@ docker rmi $IMAGE_NAME $FULL_IMAGE
 docker pull $FULL_IMAGE
 docker tag $FULL_IMAGE $IMAGE_NAME
 
+# Заменяем REGISTRY_ID на реальный через replace
+sed -i "s/\${REGISTRY_ID}/${REGISTRY_ID}/g" compose.yaml
+
 # Запускаем compose (должен использовать образ из registry)
 docker compose -f compose.yaml up -d
