@@ -12,5 +12,3 @@ services:
     restart: always
     env_file:
       - /opt/app/.env
-    depends_on:
-      - db
