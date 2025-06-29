@@ -4,7 +4,7 @@ set -euo pipefail
 
 REPO="https://github.com/Werest/shvirtd-example-python"
 DIR="/opt/app"
-REGISTRY_ID=$(cat /opt/app/registry_id)
+REGISTRY_ID=${REGISTRY_ID}
 IMAGE_NAME="webapp"
 TAG="latest"
 FULL_IMAGE="cr.yandex/${REGISTRY_ID}/${IMAGE_NAME}:${TAG}"
